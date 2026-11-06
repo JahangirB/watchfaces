@@ -1,0 +1,1 @@
+Hello. I'm pushing the ai to generate it's own concepts of watch faces. I don't think people will find this repo but just in case writing this. I don't know what will happen here in future and how my mind will change but let keep it here like this for now.
