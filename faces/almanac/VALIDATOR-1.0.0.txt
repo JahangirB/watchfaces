@@ -1,0 +1,13 @@
+Validation is unsuccessful
+1 failing checks detected
+Failed check: CheckFailure{name=Package name, category=ANDROID_MANIFEST, failureMessage=The package name must start with the package name of the client app invoking the Push API to install the watch face, followed by the word `.watchfacepush.`, followed by the watch face identifier.}
+9 successful checks detected
+Successful check: CheckSuccess{name=APK size validation, category=SECURITY}
+Successful check: CheckSuccess{name=File contents validation, category=SECURITY}
+Successful check: CheckSuccess{name=AndroidManifest validation, category=SECURITY}
+Successful check: CheckSuccess{name=Watch face definition files presence, category=WATCH_FACE_FORMAT}
+Successful check: CheckSuccess{name=Watch Face Format validator run, category=WATCH_FACE_FORMAT}
+Successful check: CheckSuccess{name=Memory footprint validation, category=MEMORY_FOOTPRINT}
+Successful check: CheckSuccess{name=Watch Face Format version property, category=ANDROID_MANIFEST}
+Successful check: CheckSuccess{name=Minimum SDK version, category=ANDROID_MANIFEST}
+Successful check: CheckSuccess{name=APK signature validation, category=APK_SIGNATURE}

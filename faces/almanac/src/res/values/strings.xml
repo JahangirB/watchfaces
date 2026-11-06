@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Almanac</string>
+    <string name="cfg_schedule">Day schedule</string>
+    <string name="cfg_scale">Light scale</string>
+    <string name="slot_bottom">Bottom</string>
+    <string name="sched_early">Early 06–21</string>
+    <string name="sched_standard">Standard 07–22</string>
+    <string name="sched_late">Late 08–23</string>
+</resources>

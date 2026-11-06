@@ -1,0 +1,4 @@
+.keys/
+faces/*/build/
+__pycache__/
+dist/*.idsig

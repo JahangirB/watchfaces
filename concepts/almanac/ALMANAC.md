@@ -167,3 +167,10 @@ under these rules is 7.85. The only gap left on paper is translations (S10). The
 remaining points can only come from running on the device (S13), testing with
 people (S14), and S12 moving from "mapped" to "proven". Full details are in
 [AUDIT.md](AUDIT.md).
+
+## Build status
+
+Version 1.0.0 is built: [`dist/almanac-1.0.0.apk`](../../dist/almanac-1.0.0.apk). It passes Google's
+WFF schema and memory-footprint validation, but hasn't run on a watch yet. To install it, see
+[docs/INSTALL.md](../../docs/INSTALL.md). For build details and the differences from this concept
+(8-hour forecast, schedule presets), see [faces/almanac/README.md](../../faces/almanac/README.md).
