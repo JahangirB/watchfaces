@@ -1,59 +1,63 @@
 # Horizon: flagship concept
 
-> **The next 12 hours of weather, drawn on the clock itself.**
+> **A 12-hour weather landscape wrapped around the dial, with the sun as the hour hand.**
 > Look at 4 o'clock to see the weather at 4 pm.
 
-| Active | Always-on |
-|---|---|
-| <img src="../previews/horizon.svg" width="300" alt="Horizon active"> | <img src="../previews/horizon-aod.svg" width="300" alt="Horizon always-on"> |
+| Active | Tilt to scrub | Always-on |
+|---|---|---|
+| <img src="../previews/horizon.svg" width="250" alt="Horizon active"> | <img src="../previews/horizon-scrub.svg" width="250" alt="Horizon tilt to scrub"> | <img src="../previews/horizon-aod.svg" width="250" alt="Horizon always-on"> |
 
-*Mockup shows Thu 06 Nov, 10:08, with sample forecast data.*
+*Mockups show Thu 06 Nov, 10:08, with sample forecast data. Drawn by `tools/render_horizon.py`.*
 
 ## The idea
 
-On a normal face, the 12 hour positions only tell you the time. Horizon also puts
-a forecast at each one. Each hour position carries a segment for the **next time
-that hour comes around**. The segment at 2 o'clock shows 2 pm, and the one at
-8 o'clock shows 8 pm. The ring rolls forward every hour, so it always covers
-the next 12 hours, starting from now.
+Each hour position on the dial shows the weather for the next time that hour
+comes around. Together the 12 positions form one continuous scene, and it
+rolls forward every hour:
 
-You can plan your day at a glance. If the hatching starts at 4 o'clock, rain
-starts at 4. The shortest, bluest segment is the coldest hour, which is when
-you'll want a jacket.
+- **The ground is temperature.** It rises over warm hours and dips over cold
+  ones, and its colour runs from cold blue to warm orange.
+- **The sky is time of day.** Day blue changes to dusk violet at sunset, then
+  to a starry night with the moon in its real phase.
+- **The weather is placed where it will happen.** Clouds sit on the horizon
+  over cloudy hours, and rain falls under rainy hours. The more likely the
+  rain, the denser it falls.
+- **The sun is the hour hand.** It moves through the sky above the current
+  hour, lights the dial from its side, and makes the time digits cast a
+  shadow that swings around over the day.
 
 ## Anatomy
 
 | # | Element | What it tells you |
 |---|---|---|
-| 1 | **Forecast band** | 12 segments, one per hour position. The segment's **height** shows the temperature: taller means warmer. Its **colour** runs from blue for cold to amber and orange for warm. |
-| 2 | **Now pointer** | The hour hand. It's a small arrow that points into the current hour's segment, and that segment is outlined. |
-| 3 | **Seam** | A dashed line where "now" meets "+12 h", so you know where the forecast ends. |
-| 4 | **Rain hatching** | Diagonal blue hatching on a segment, getting denser as the rain chance goes up. |
-| 5 | **Daylight track** | A thin line under the band, gold during daylight hours and indigo at night. A condition icon (sun, cloud, rain or moon) sits at each hour. |
-| 6 | **Pace ring** | The step-goal progress arc, plus a **ghost marker** showing where you *should* be by now to reach your goal by the end of your day. If the green end is past the ghost, you're ahead. |
-| 7 | **Rain countdown** | One line of text, worked out from the hourly forecast: "Rain at 16:00 · 60%", or "Dry for the next 12 h". |
-| 8 | **Vitals line** | Heart rate, with the heart icon coloured by HR zone. Then today's steps, with how far ahead of or behind pace you are (`+640`). |
+| 1 | Terrain | The temperature curve for the next 12 hours, shown by height and colour |
+| 2 | Sun | The hour hand, which is also where "now" is in the sky |
+| 3 | Sky, clouds, stars, moon | Day, dusk and night; cloud cover; the moon's phase |
+| 4 | Falling rain | When rain is likely, and how likely |
+| 5 | Seam | Where now meets +12 h |
+| 6 | Sun-cast shadow | The direction of the light, which changes with the time of day |
+| 7 | Pace ghost | Where your step count should be by now to reach today's goal |
+| 8 | Rain countdown | "Rain at 16:00 · 60%", or "Dry for the next 12 h" |
+| 9 | Vitals | Heart rate coloured by zone, steps, and how far ahead of or behind pace you are |
 
 ## Features
 
-- **Forecast on the dial.** The forecast lines up with real clock positions. I haven't seen another Wear OS face do this.
-- **Rain countdown.** The face finds the first hour in the next 12 where the
-  rain chance is 50% or more, and shows when it starts and how likely it is.
-- **Step pace ghost.** Compares your steps against an even pace across your
-  waking day, so it's "am I on track?" rather than just a percentage. You set
-  your wake and sleep hours in Customize.
-- **HR zones.** The heart icon and its value change colour across 5 zones
-  based on your max HR, which you set in Customize.
-- **Depth parallax.** The forecast band and the centre sit on separate layers
-  that shift slightly as you tilt your wrist, using WFF's gyro support.
-- **Sky that follows the day.** The background glow changes from dawn blue to
-  day to dusk violet to night.
-- **Works without weather data.** If there's no weather data yet, the band
-  becomes a plain 12-hour dial with hour ticks and step pace, and shows a small
-  "No forecast" note. It never shows an empty ring.
-- **Purpose-built always-on mode.** Only the temperature curve's outline, the
-  rain dashes, the pointer and the time are lit, at about 6% of pixels. It
-  shifts a few pixels every minute to prevent burn-in.
+- **Tilt to scrub.** Tilt your wrist and a cursor moves around the ring. The
+  rest of the landscape dims, and the centre shows that hour's temperature,
+  feels-like, rain chance and UV. Level your wrist and it goes back to the
+  time. It needs no taps.
+- **Moving weather.** In active mode, rain falls, clouds drift and stars
+  twinkle, only under the hours they're forecast for. All of it stops in
+  always-on mode.
+- **Rain countdown.** Worked out on the watch from the hourly forecast.
+- **Step pace ghost.** Compares your steps with your own wake and sleep hours,
+  so you can tell whether you're on track.
+- **HR zone colour.** Five zones based on the max heart rate you set.
+- **No-weather fallback.** Without weather data it becomes a calm 12-hour dial
+  with step pace, never an empty ring.
+- **Always-on mode.** Shows the crest line in temperature colours, rain dashes,
+  an outline of the sun, and the time. About 6% of pixels are lit, and
+  everything shifts slightly every minute to prevent burn-in.
 
 ### Customize menu
 
@@ -61,64 +65,60 @@ you'll want a jacket.
 |---|---|
 | Band shows | Temperature · Rain chance · UV index |
 | Units | °C · °F |
-| Colour scale | Thermal (default) · Mono · Colour-blind safe (blue–yellow) |
-| Wake / sleep hours | Used by the pace ghost (default 07:00–22:00) |
-| Max HR | Used for zone colours (default 190) |
-| Parallax | On · Off |
-| Slot left / right | 2 complication slots replacing the vitals line, e.g. calendar or battery |
+| Colour scale | Thermal · Mono · Colour-blind safe (blue–yellow) |
+| Wake / sleep hours | Used for the pace ghost (default 07:00–22:00) |
+| Max heart rate | Used for zone colours (default 190) |
+| Tilt to scrub | On · Off |
+| Weather motion | Full · Subtle · Still |
+| Left / right slot | 2 complication slots, e.g. calendar or battery |
 
 ## How it's built (Watch Face Format, no app code)
 
-The whole face is written as declarative WFF XML, with no Kotlin or Java code.
-That's what makes it hard to build:
-
 | Problem | Approach |
 |---|---|
-| The ring has to roll each hour | Build the 12 segments by **offset** (now, +1 h … +11 h) instead of by clock position, and rotate the whole group by `HOUR_0_23 × 30°`. Each segment then reads one fixed data source, `WEATHER.HOURS.<n>`. |
-| Segment height and colour per hour | Each segment is an arc whose radius and colour come from expressions on that hour's temperature, normalised against the 12-hour min and max. |
-| Rain countdown text | A chain of 12 `Condition` blocks evaluated in order; the first hour that matches wins. |
-| Pace ghost position | `(minutes since wake ÷ waking minutes) × 360°` as a `Transform` angle, clamped to the waking window. |
-| Too much hand-written XML | A Python generator writes `watchface.xml` from one geometry spec. It's the same idea as `tools/render_horizon.py`, which drew these mockups. |
+| The ring rolls every hour | Build the segments by offset (now … +11 h), then rotate the whole group by `HOUR_0_23 × 30°`. Each segment reads one fixed source, `WEATHER.HOURS.<n>`. |
+| A continuous terrain | Thin slices whose radius and colour are interpolated between neighbouring hours using expressions. |
+| Tilt to scrub | Map the accelerometer tilt angle to a 0–11 hour index, with a dead zone so a level wrist shows the time. The cursor, the dimming and the centre text are all chosen by that index. |
+| Moving rain, clouds and stars | Repeating transforms driven by seconds, shown only on hours whose forecast matches, and removed from the always-on layout. |
+| Sun-cast shadow | Offset the digits' shadow by `−sin` and `cos` of the sun's angle, the same expression that positions the sun. |
+| Rain countdown | A chain of 12 `Condition` blocks evaluated in order; the first hour that matches wins. |
+| Pace ghost | A `Transform` angle of (minutes since wake ÷ waking minutes) × 360°, clamped to the waking window. |
+| Hundreds of repeated XML elements | A Python generator writes `watchface.xml` from one geometry spec. |
 
-### Data sources needed
+## Risks, tested first
 
-| Data | WFF source |
-|---|---|
-| Hourly temperature and condition | `WEATHER.HOURS.<n>.*` (WFF v2, Wear OS 5) |
-| Rain chance | Hourly rain chance if the watch exposes it. If not, fall back to the hourly condition (rain or showers) |
-| Weather available or stale | `WEATHER.IS_AVAILABLE`, `WEATHER.IS_ERROR` |
-| Steps / goal | `STEP_COUNT`, `STEP_GOAL` |
-| Heart rate | `HEART_RATE` |
-| Tilt | `Gyro` element |
+1. **Which weather fields the Watch 3 exposes, and how many hours ahead.**
+   Everything depends on this. If hourly rain chance is missing, the rain
+   features fall back to the hourly condition.
+2. **Tilt data inside a watch face.** If it isn't available, scrubbing falls back
+   to two tap zones (earlier and later), and the rest of the face is unaffected.
+3. **Arc radius driven by an expression.** If WFF won't do it, each slice
+   becomes a stack of thin arcs, each shown or hidden by a threshold, like an
+   equaliser.
+4. **Render cost.** The landscape is about 300 slices plus moving weather. It
+   will be measured with Google's memory-footprint tool, and the slice count
+   lowered if needed.
 
-### Risks to check on day 1
-
-1. **Which weather fields the Watch 3 actually exposes**, and how many hours
-   ahead. Everything else depends on this, so it's the first thing to test on
-   the real watch.
-2. **Arc radius driven by an expression.** If WFF won't animate the radius, I
-   can use the same trick as an equaliser instead: a stack of thin arcs per
-   segment, each shown or hidden by a threshold.
-3. **Render cost.** Google's memory-footprint tool will measure the layered
-   band, which has about 60 elements. Always-on mode has its own lighter tree.
-
-## Development plan (about 6 working days)
+## Plan (about 8 working days)
 
 | Day | Work |
 |---|---|
-| 1 | Set up the project, Gradle and CI. Test the weather fields on the watch or emulator. Get Google's validator and memory checker running. |
-| 2 | Python XML generator, and the rolling forecast band with temperature height and colour. |
-| 3 | Rain hatching, condition icons, daylight track, now pointer and seam. Rain countdown logic. |
-| 4 | Centre layout, pace ring and ghost, HR zones, complication slots. |
-| 5 | Customize options, the no-weather fallback, parallax, always-on mode and burn-in shift. |
-| 6 | Testing on the watch (morning, evening, night, rain and no data), measuring battery and memory, release APK, install guide. |
+| 1 | Project, Gradle and CI. Test the weather fields and the tilt sensor on the watch. Validator and memory checker. |
+| 2 | XML generator. Terrain with continuous height and colour, and the rolling-hour rotation. |
+| 3 | Sky: day, dusk and night colours, stars, the moon's phase, and clouds on the horizon. |
+| 4 | The sun as hour hand, light and shadow, seam, falling rain. |
+| 5 | Tilt to scrub: tilt mapping, cursor, dimming, hour detail panel. |
+| 6 | Centre layout, rain countdown, pace ghost, HR zones, complication slots. |
+| 7 | Customize options, no-weather fallback, always-on mode, burn-in shift, motion levels. |
+| 8 | Testing on the watch at dawn, midday, dusk and night, in rain and with no data. Battery and memory checks, release, install guide. |
 
-## Why this one
+## Where the ceiling is
 
-- **It's useful.** Seeing which hour is when, and its weather, in the same
-  place answers "will it rain on my way home?" without opening an app.
-- **It's unique.** The forecast sits on the clock positions rather than in a
-  separate widget.
-- **It's demanding.** It pushes WFF expressions, conditions, transforms and
-  gyro, with a generator to keep the XML manageable. It's a real engineering
-  project rather than a skin.
+This is close to the most a Watch Face Format face can do. WFF has no code,
+no network access, no history and no location. The next step up is a small
+companion app on the watch that supplies data to the face. That's about 4–6
+more days, a second APK, and location permission. It would add:
+
+- real sunrise and sunset, and where the sun and moon actually are in your sky;
+- minute-by-minute rain ("starts in 14 min"), air quality and pollen;
+- today's heart rate traced along the ground as a second ridge.
