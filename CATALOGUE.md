@@ -3,6 +3,8 @@
 These are the planned watch faces for this repository. Each one will be built
 for the OnePlus Watch 3 and published as a free download on GitHub Releases.
 
+> **Flagship concept:** [Horizon](concepts/HORIZON.md) puts a rolling 12-hour forecast on the dial itself. It's the most complex face planned here.
+
 ## Target hardware and platform
 
 | Item | Value |
