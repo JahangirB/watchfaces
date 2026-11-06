@@ -1,0 +1,965 @@
+{
+ "states": {
+  "morning": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "MORNING · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#EFE7DA",
+     "contrast_p5": 17.11,
+     "max_radius": 206.6,
+     "bbox": [
+      86.4,
+      38.8,
+      293.3,
+      83.5
+     ]
+    },
+    {
+     "role": "time",
+     "text": "07:42",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#EFE7DA",
+     "contrast_p5": 17.11,
+     "max_radius": 187.1,
+     "bbox": [
+      108.9,
+      93,
+      248.1,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#F4B77E",
+     "contrast_p5": 11.92,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "High 16° · low 8°",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#EFE7DA",
+     "contrast_p5": 17.11,
+     "max_radius": 146.1,
+     "bbox": [
+      178,
+      299,
+      170.0,
+      25
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "320",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#EFE7DA",
+     "contrast_p5": 17.11,
+     "max_radius": 182.2,
+     "bbox": [
+      212.3,
+      390,
+      41.4,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 7.03,
+   "mean_lum_pct": 2.988,
+   "time_ink_px": 88,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#6E675E",
+    "#EFE7DA",
+    "#F4B77E"
+   ]
+  },
+  "day": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "DAY · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 202.8,
+     "bbox": [
+      118.7,
+      38.7,
+      228.6,
+      57.3
+     ]
+    },
+    {
+     "role": "time",
+     "text": "13:20",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 181.4,
+     "bbox": [
+      117.7,
+      93,
+      230.7,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#8FC7FF",
+     "contrast_p5": 11.78,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "+640 steps ahead",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 145.6,
+     "bbox": [
+      178,
+      299,
+      169.5,
+      25
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "2,840",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 183.5,
+     "bbox": [
+      202.5,
+      390,
+      60.9,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 7.38,
+   "mean_lum_pct": 3.199,
+   "time_ink_px": 89,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#5E6670",
+    "#8FC7FF",
+    "#ECF0F4"
+   ]
+  },
+  "evening": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "EVENING · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECE6F3",
+     "contrast_p5": 17.18,
+     "max_radius": 203.6,
+     "bbox": [
+      90.0,
+      38.8,
+      285.9,
+      79.8
+     ]
+    },
+    {
+     "role": "time",
+     "text": "19:05",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECE6F3",
+     "contrast_p5": 17.18,
+     "max_radius": 183.1,
+     "bbox": [
+      115.0,
+      93,
+      236.1,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Tomorrow: Windy",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#C6A8F5",
+     "contrast_p5": 10.32,
+     "max_radius": 130.5,
+     "bbox": [
+      178,
+      261,
+      175.4,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "High 13° · rain 20%",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECE6F3",
+     "contrast_p5": 17.18,
+     "max_radius": 168.0,
+     "bbox": [
+      178,
+      299,
+      196.8,
+      25
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "9,412",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECE6F3",
+     "contrast_p5": 17.18,
+     "max_radius": 183.5,
+     "bbox": [
+      202.5,
+      390,
+      60.9,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 7.46,
+   "mean_lum_pct": 3.119,
+   "time_ink_px": 89,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#665E72",
+    "#C6A8F5",
+    "#ECE6F3"
+   ]
+  },
+  "night": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "NIGHT · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 203.9,
+     "bbox": [
+      103.6,
+      38.7,
+      258.7,
+      68.1
+     ]
+    },
+    {
+     "role": "time",
+     "text": "23:30",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#FF6B57",
+     "contrast_p5": 7.49,
+     "max_radius": 186.5,
+     "bbox": [
+      109.8,
+      93,
+      246.5,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Morning crescent",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 122.3,
+     "bbox": [
+      177,
+      261,
+      168.0,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "Light at 07:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 124.6,
+     "bbox": [
+      178,
+      299,
+      141.2,
+      25
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "06:45",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 183.6,
+     "bbox": [
+      202.4,
+      390,
+      61.3,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 6.57,
+   "mean_lum_pct": 0.99,
+   "time_ink_px": 88,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#5A1D18",
+    "#D9483B",
+    "#FF6B57"
+   ]
+  },
+  "morning-aod": {
+   "texts": [
+    {
+     "role": "time",
+     "text": "07:42",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#EFE7DA",
+     "contrast_p5": 17.11,
+     "max_radius": 187.1,
+     "bbox": [
+      108.9,
+      93,
+      248.1,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#F4B77E",
+     "contrast_p5": 11.92,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    }
+   ],
+   "lit_pct": 3.82,
+   "mean_lum_pct": 1.305,
+   "time_ink_px": 88,
+   "roles": [
+    "glyph",
+    "line-a",
+    "time"
+   ],
+   "colours": [
+    "#EFE7DA",
+    "#F4B77E"
+   ]
+  },
+  "day-aod": {
+   "texts": [
+    {
+     "role": "time",
+     "text": "13:20",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 181.4,
+     "bbox": [
+      117.7,
+      93,
+      230.7,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#8FC7FF",
+     "contrast_p5": 11.78,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    }
+   ],
+   "lit_pct": 3.99,
+   "mean_lum_pct": 1.338,
+   "time_ink_px": 90,
+   "roles": [
+    "glyph",
+    "line-a",
+    "time"
+   ],
+   "colours": [
+    "#8FC7FF",
+    "#ECF0F4"
+   ]
+  },
+  "evening-aod": {
+   "texts": [
+    {
+     "role": "time",
+     "text": "19:05",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECE6F3",
+     "contrast_p5": 17.18,
+     "max_radius": 183.1,
+     "bbox": [
+      115.0,
+      93,
+      236.1,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Tomorrow: Windy",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#C6A8F5",
+     "contrast_p5": 10.32,
+     "max_radius": 130.5,
+     "bbox": [
+      178,
+      261,
+      175.4,
+      25
+     ]
+    }
+   ],
+   "lit_pct": 3.38,
+   "mean_lum_pct": 1.245,
+   "time_ink_px": 90,
+   "roles": [
+    "glyph",
+    "line-a",
+    "time"
+   ],
+   "colours": [
+    "#C6A8F5",
+    "#ECE6F3"
+   ]
+  },
+  "night-aod": {
+   "texts": [
+    {
+     "role": "time",
+     "text": "23:30",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 186.5,
+     "bbox": [
+      109.8,
+      93,
+      246.5,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Morning crescent",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#D9483B",
+     "contrast_p5": 4.94,
+     "max_radius": 122.3,
+     "bbox": [
+      177,
+      261,
+      168.0,
+      25
+     ]
+    }
+   ],
+   "lit_pct": 3.37,
+   "mean_lum_pct": 0.339,
+   "time_ink_px": 88,
+   "roles": [
+    "glyph",
+    "line-a",
+    "time"
+   ],
+   "colours": [
+    "#D9483B"
+   ]
+  },
+  "nodata": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "DAY · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 202.8,
+     "bbox": [
+      118.7,
+      38.7,
+      228.6,
+      57.3
+     ]
+    },
+    {
+     "role": "time",
+     "text": "13:20",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 181.4,
+     "bbox": [
+      117.7,
+      93,
+      230.7,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "No forecast yet",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#8FC7FF",
+     "contrast_p5": 11.78,
+     "max_radius": 99.2,
+     "bbox": [
+      177,
+      261,
+      141.8,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "Check connection",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 152.2,
+     "bbox": [
+      178,
+      299,
+      178.4,
+      24
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "2,840",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 183.5,
+     "bbox": [
+      202.5,
+      390,
+      60.9,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 5.89,
+   "mean_lum_pct": 2.9,
+   "time_ink_px": 89,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#5E6670",
+    "#8FC7FF",
+    "#ECF0F4"
+   ]
+  },
+  "stale": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "DAY · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 202.8,
+     "bbox": [
+      118.7,
+      38.7,
+      228.6,
+      57.3
+     ]
+    },
+    {
+     "role": "time",
+     "text": "13:20",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 181.4,
+     "bbox": [
+      117.7,
+      93,
+      230.7,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#8FC7FF",
+     "contrast_p5": 11.78,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "Forecast 6 h old",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 134.9,
+     "bbox": [
+      178,
+      299,
+      155.5,
+      24
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "2,840",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 183.5,
+     "bbox": [
+      202.5,
+      390,
+      60.9,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 7.25,
+   "mean_lum_pct": 3.129,
+   "time_ink_px": 89,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#5E6670",
+    "#8FC7FF",
+    "#ECF0F4"
+   ]
+  },
+  "error": {
+   "texts": [
+    {
+     "role": "label",
+     "text": "DAY · THU 6 NOV",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 202.8,
+     "bbox": [
+      118.7,
+      38.7,
+      228.6,
+      57.3
+     ]
+    },
+    {
+     "role": "time",
+     "text": "13:20",
+     "size": 120,
+     "family": "Fraunces",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 181.4,
+     "bbox": [
+      117.7,
+      93,
+      230.7,
+      148
+     ]
+    },
+    {
+     "role": "line-a",
+     "text": "Rain from 16:00",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#8FC7FF",
+     "contrast_p5": 11.78,
+     "max_radius": 121.1,
+     "bbox": [
+      177,
+      261,
+      166.6,
+      25
+     ]
+    },
+    {
+     "role": "line-b",
+     "text": "Last update failed",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 148.9,
+     "bbox": [
+      178,
+      299,
+      173.7,
+      25
+     ]
+    },
+    {
+     "role": "complication",
+     "text": "2,840",
+     "size": 24,
+     "family": "Newsreader",
+     "colour": "#ECF0F4",
+     "contrast_p5": 18.34,
+     "max_radius": 183.5,
+     "bbox": [
+      202.5,
+      390,
+      60.9,
+      24
+     ]
+    }
+   ],
+   "lit_pct": 7.35,
+   "mean_lum_pct": 3.188,
+   "time_ink_px": 89,
+   "roles": [
+    "complication",
+    "glyph",
+    "label",
+    "line-a",
+    "line-b",
+    "time"
+   ],
+   "colours": [
+    "#5E6670",
+    "#8FC7FF",
+    "#ECF0F4"
+   ]
+  }
+ },
+ "gates": {
+  "G1": {
+   "pass": true,
+   "evidence": "Data-source table in ALMANAC.md; every value maps to a documented WFF v2 source or a calculation on them."
+  },
+  "G2": {
+   "pass": true,
+   "evidence": "time ink height px {'morning': 88, 'day': 89, 'evening': 89, 'night': 88, 'nodata': 89, 'stale': 89, 'error': 89}; time contrast p5 {'morning': 17.11, 'day': 18.34, 'evening': 17.18, 'night': 7.49, 'nodata': 18.34, 'stale': 18.34, 'error': 18.34}"
+  },
+  "G3": {
+   "pass": true,
+   "evidence": "lit % {'morning-aod': 3.82, 'day-aod': 3.99, 'evening-aod': 3.38, 'night-aod': 3.37}"
+  },
+  "G4": {
+   "pass": true,
+   "evidence": "16 glyph files, 16 distinct"
+  },
+  "G5": {
+   "pass": true,
+   "evidence": "10/10 required states present; extra: ['error']"
+  },
+  "G6": {
+   "pass": true,
+   "evidence": "outermost glyph corner 206.6 px (morning: 'MORNING · THU 6 NOV')"
+  }
+ },
+ "scores": {
+  "S1": [
+   1.0,
+   "smallest text 24px"
+  ],
+  "S2": [
+   1.0,
+   "100.0% of text ≥4.5:1; lowest three [(4.94, 'night', '06:45'), (4.94, 'night', 'Light at 07:00'), (4.94, 'night', 'Morning crescent')]"
+  ],
+  "S3": [
+   1.0,
+   "time / largest other text = 5.00"
+  ],
+  "S4": [
+   1.0,
+   "information units per state {'morning': 6, 'day': 6, 'evening': 6, 'night': 6, 'morning-aod': 3, 'day-aod': 3, 'evening-aod': 3, 'night-aod': 3, 'nodata': 6, 'stale': 6, 'error': 6}"
+  ],
+  "S6": [
+   1.0,
+   "accent ΔE76 pairwise {'morning-day': 73.2, 'morning-evening': 72.8, 'morning-night': 48.8, 'day-evening': 30.1, 'day-night': 97.6, 'evening-night': 82.5}; non-colour cues: part-of-day word, hatching pattern, marker shape"
+  ],
+  "S7": [
+   1.0,
+   "night text red-dominant=True; mean luminance 0.99%"
+  ],
+  "S8": [
+   1.0,
+   "time box spread across parts of day 0.10px"
+  ],
+  "S16": [
+   1.0,
+   "typefaces ['Fraunces', 'Newsreader']; colours per part {'morning': 3, 'day': 3, 'evening': 3, 'night': 3}"
+  ],
+  "S5": [
+   1.0,
+   "R: each part of the day's glance questions (ALMANAC.md) are answered by visible content"
+  ],
+  "S9": [
+   1.0,
+   "R: no-data ('No forecast yet / Check connection'), stale ('Forecast 6 h old') and error ('Last update failed') states are drawn"
+  ],
+  "S10": [
+   0.75,
+   "D: unit, 12/24 h, condition, day and month names come from the system; the fixed phrases ('Rain from', 'High', 'Light at') are English-only until translations are added"
+  ],
+  "S11": [
+   1.0,
+   "D: 5 options — wake and sleep hours, inks, red night mode, 24 h scale, complication"
+  ],
+  "S12": [
+   0.5,
+   "D: every mechanism is mapped to a WFF element, but none is proven on the watch yet"
+  ],
+  "S13": [
+   0.0,
+   "Not run on a OnePlus Watch 3 yet"
+  ],
+  "S14": [
+   0.0,
+   "No comprehension test with people yet"
+  ],
+  "S15": [
+   0.5,
+   "R: no known face combines parts of the day with engraved almanac plates; novelty can't be proven exhaustively, so capped at 0.5"
+  ]
+ },
+ "weights": {
+  "S1": 10,
+  "S2": 10,
+  "S3": 6,
+  "S4": 6,
+  "S5": 6,
+  "S6": 5,
+  "S7": 5,
+  "S8": 5,
+  "S9": 5,
+  "S10": 5,
+  "S11": 5,
+  "S12": 6,
+  "S13": 8,
+  "S14": 8,
+  "S15": 5,
+  "S16": 5
+ },
+ "score": 7.725,
+ "gates_pass": true,
+ "paper_ceiling": 7.85
+}

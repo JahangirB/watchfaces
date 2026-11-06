@@ -3,7 +3,7 @@
 These are the planned watch faces for this repository. Each one will be built
 for the OnePlus Watch 3 and published as a free download on GitHub Releases.
 
-> **Flagship concept:** [Horizon](concepts/HORIZON.md) wraps a 12-hour weather landscape around the dial, with the sun as the hour hand. It's the most complex face planned here.
+> **Flagship concept:** [Almanac](concepts/almanac/ALMANAC.md): the time stays fixed while an engraved plate changes with the part of the day. Its acceptance criteria and measured audit are alongside it. [Horizon](concepts/HORIZON.md) is an earlier exploration it replaces.
 
 ## Target hardware and platform
 

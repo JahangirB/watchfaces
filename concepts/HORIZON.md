@@ -1,3 +1,5 @@
+> **Superseded by [Almanac](almanac/ALMANAC.md).** Horizon claimed an hourly rain chance and a feels-like temperature, and Watch Face Format provides neither.
+
 # Horizon: flagship concept
 
 > **A 12-hour weather landscape wrapped around the dial, with the sun as the hour hand.**
