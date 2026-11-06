@@ -30,6 +30,18 @@ sideload from GitHub.
 
 ---
 
+## Gallery
+
+All previews show Thu 06 Nov at 10:08:36. Each face also has an always-on version (`previews/<face>-aod.svg`).
+
+| | | | |
+|---|---|---|---|
+| <img src="previews/monolith.svg" width="180" alt="Monolith"><br>**01 Monolith** | <img src="previews/meridian.svg" width="180" alt="Meridian"><br>**02 Meridian** | <img src="previews/pulse.svg" width="180" alt="Pulse"><br>**03 Pulse** | <img src="previews/tidal.svg" width="180" alt="Tidal"><br>**04 Tidal** |
+| <img src="previews/field-line.svg" width="180" alt="Field Line"><br>**05 Field Line** | <img src="previews/terminal.svg" width="180" alt="Terminal"><br>**06 Terminal** | <img src="previews/daylight.svg" width="180" alt="Daylight"><br>**07 Daylight** | <img src="previews/dashboard.svg" width="180" alt="Dashboard"><br>**08 Dashboard** |
+| <img src="previews/orbit.svg" width="180" alt="Orbit"><br>**09 Orbit** | <img src="previews/lunar.svg" width="180" alt="Lunar"><br>**10 Lunar** | <img src="previews/wordsmith.svg" width="180" alt="Wordsmith"><br>**11 Wordsmith** | <img src="previews/bits.svg" width="180" alt="Bits"><br>**12 Bits** |
+
+---
+
 ## Catalogue at a glance
 
 | # | Name | Style | Type | Complications | Difficulty | Release |
@@ -55,6 +67,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 ## Face details
 
 ### 01 · Monolith: bold minimal digital
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/monolith.svg" width="220" alt="Monolith active"> | <img src="previews/monolith-aod.svg" width="220" alt="Monolith always-on"> |
+
 - **Look:** Very large, condensed hour digits stacked over the minute digits,
   centered on a black background. The date sits in small caps under the minutes.
 - **Complications:** 1 slot at the bottom, defaulting to battery.
@@ -65,6 +82,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
   repo, the build and the release pipeline from start to finish.
 
 ### 02 · Meridian: clean classic analog
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/meridian.svg" width="220" alt="Meridian active"> | <img src="previews/meridian-aod.svg" width="220" alt="Meridian always-on"> |
+
 - **Look:** Thin baton indices, a minute track, tapered hands and a red sweep
   seconds hand.
 - **Complications:** 4 slots (top, bottom, left and right). Small circular
@@ -74,6 +96,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Hands and indices only, with no seconds hand.
 
 ### 03 · Pulse: fitness-first
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/pulse.svg" width="220" alt="Pulse active"> | <img src="previews/pulse-aod.svg" width="220" alt="Pulse always-on"> |
+
 - **Look:** Digital time in the center, with three concentric arc rings
   around the edge for steps, calories and active minutes, fitness-ring style.
 - **Complications:** 3 ranged-value slots that feed the rings, plus heart
@@ -83,6 +110,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Time only, with the rings dimmed to 30% opacity.
 
 ### 04 · Tidal: shifting gradient
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/tidal.svg" width="220" alt="Tidal active"> | <img src="previews/tidal-aod.svg" width="220" alt="Tidal always-on"> |
+
 - **Look:** A soft radial gradient whose colors change through the day:
   deep indigo at night, teal in the morning, amber in the evening. Thin
   digital time sits on top.
@@ -92,6 +124,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
   palette's accent color.
 
 ### 05 · Field Line: legible tool watch
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/field-line.svg" width="220" alt="Field Line active"> | <img src="previews/field-line-aod.svg" width="220" alt="Field Line always-on"> |
+
 - **Look:** Large Arabic numerals with an inner 13–24 hour ring, high-contrast
   luminous-style hands and an arrow at 12.
 - **Complications:** 3 subdials (date, battery, steps).
@@ -100,6 +137,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Hands and numerals in the lume color only.
 
 ### 06 · Terminal: retro command line
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/terminal.svg" width="220" alt="Terminal active"> | <img src="previews/terminal-aod.svg" width="220" alt="Terminal always-on"> |
+
 - **Look:** Monospace green-phosphor text in the style of a shell session:
   ```
   $ time   14:32
@@ -114,6 +156,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Only the `$ time` line, with no cursor.
 
 ### 07 · Daylight: sun-arc hybrid
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/daylight.svg" width="220" alt="Daylight active"> | <img src="previews/daylight-aod.svg" width="220" alt="Daylight always-on"> |
+
 - **Look:** A half-circle arc across the top showing today's daylight. A sun
   marker moves along it, and below the horizon line the moon marks the night.
   Digital time sits underneath.
@@ -122,6 +169,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** The arc outline and time only.
 
 ### 08 · Dashboard: data-dense grid
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/dashboard.svg" width="220" alt="Dashboard active"> | <img src="previews/dashboard-aod.svg" width="220" alt="Dashboard always-on"> |
+
 - **Look:** Compact time at the top, with a 2 × 3 grid of complication tiles
   below it. It's built for people who want everything visible at once.
 - **Complications:** 6 slots of mixed types (short text, ranged, small image).
@@ -129,6 +181,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Time and the top two tiles.
 
 ### 09 · Orbit: planetary hands
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/orbit.svg" width="220" alt="Orbit active"> | <img src="previews/orbit-aod.svg" width="220" alt="Orbit always-on"> |
+
 - **Look:** The hour and minute "hands" are two planets orbiting a central
   sun along faint orbit lines. A small moon orbits the minute planet to
   mark the seconds.
@@ -138,6 +195,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
   outlines.
 
 ### 10 · Lunar: moon-phase dress watch
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/lunar.svg" width="220" alt="Lunar active"> | <img src="previews/lunar-aod.svg" width="220" alt="Lunar always-on"> |
+
 - **Look:** An elegant analog dial with a large moon-phase window at 6
   o'clock, driven by WFF's built-in moon-phase data. Fine Roman numerals.
 - **Complications:** 2 (date and 1 free slot).
@@ -146,6 +208,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
 - **AOD:** Hands and the moon outline.
 
 ### 11 · Wordsmith: word clock
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/wordsmith.svg" width="220" alt="Wordsmith active"> | <img src="previews/wordsmith-aod.svg" width="220" alt="Wordsmith always-on"> |
+
 - **Look:** The time is written out in words, for example *"IT IS TWENTY PAST
   TEN"*. The active words are lit and the others are dimmed, letter-grid style.
 - **Complications:** An optional date line.
@@ -156,6 +223,11 @@ column is a suggested order. v1.0 covers the core styles that most people want.
   hour and minute logic, so it's best built after the pipeline is stable.
 
 ### 12 · Bits: binary / dot matrix
+
+| Active | Always-on |
+|---|---|
+| <img src="previews/bits.svg" width="220" alt="Bits active"> | <img src="previews/bits-aod.svg" width="220" alt="Bits always-on"> |
+
 - **Look:** BCD binary clock columns of glowing dots, with a small
   human-readable time below for anyone who doesn't read binary.
 - **Complications:** 1 (battery).
@@ -194,6 +266,7 @@ watchfaces/
 │   │       └── xml/watch_face_info.xml
 │   ├── meridian/
 │   └── ...
+├── previews/              ← design mockups (tools/render_previews.py)
 ├── docs/
 │   └── INSTALL.md          ← step-by-step sideload guide
 └── .github/workflows/
